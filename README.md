@@ -5,7 +5,7 @@ Flash-card App
 ## Lab 2
 
 ### App Description
-This is an update to the flashcard app. Now, the user can choose a different officfe
+This is an update to the flashcard app. Now, the user can choose a different question and answer to display on their flashcards, they can also cancel and go back to the main page.
 
 ### App Walk-though
 
