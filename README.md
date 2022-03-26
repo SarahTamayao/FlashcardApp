@@ -9,7 +9,7 @@ This is an update of the Flashcard app. The user can now add their own questions
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/gAe4T6NQIY.gif" width=200><br>
+<img src="http://g.recordit.co/NPLiOmzkpy.gif" width=200><br>
 
 ## Required
 - [x] User can browse through multiple flashcards
