@@ -9,7 +9,19 @@ This is an update of the Flashcard app. The user can now add their own questions
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/NPLiOmzkpy.gif" width=200><br>
+<img src="http://g.recordit.co/41j1C2lsG4.gif" width=200><br>
+
+### Adding multiple flashcards
+
+<img src="http://g.recordit.co/y4EFFu3yEw.gif" width=200><br>
+
+### Deleting flashcards
+
+<img src="http://g.recordit.co/VyO6GyMLDg.gif" width=200><br>
+
+### Editing existing flashcard
+
+<img src="http://g.recordit.co/WkLuTiUBMI.gif" width=200><br>
 
 ## Required
 - [x] User can browse through multiple flashcards
