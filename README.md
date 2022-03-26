@@ -2,6 +2,25 @@
 # FlashcardApp
 Flash-card App
 
+## Lab 3
+
+### App Description
+This is an update of the Flashcard app. The user can now add their own questions, edit the questions, delete the questions, get multiple choices and save multiple flashcards.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/gAe4T6NQIY.gif" width=200><br>
+
+## Required
+- [x]User can browse through multiple flashcards
+- [x]User can re-open the app and see previously created flashcards
+- [x]Push code to GitHub
+## Optional
+- [x] User can delete a flashcard
+- [x] User can edit existing flashcard
+- [x] User can store multiple choice questions
+
+
 ## Lab 2
 
 ### App Description
@@ -18,9 +37,9 @@ This is an update to the flashcard app. Now, the user can choose a different que
 - [x] Push code to GitHub
 
 ## Optional
-- [ ] User gets an error if they try to create a new flashcard with no question or answer
-- [ ] User can edit existing flashcard
-- [ ] User can add multiple choice answers in the creation screen
+- [x] User gets an error if they try to create a new flashcard with no question or answer
+- [x] User can edit existing flashcard
+- [x] User can add multiple choice answers in the creation screen
 
 ## Lab 1
 
@@ -38,6 +57,6 @@ This is a flashcard app that asks the user a question and changes to show the an
 - [x] Build in logic to show the answer side when the card is tapped
 - [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
-- [ ] Style the question and answer side of the card to better distinguish between the two sides
-- [ ] Add selectable multiple choice answers beneath the card
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
