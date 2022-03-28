@@ -23,6 +23,10 @@ This is an update of the Flashcard app. The user can now add their own questions
 
 <img src="http://g.recordit.co/WkLuTiUBMI.gif" width=200><br>
 
+### Re-opening the app and see previously created flashcards
+
+<img src="http://g.recordit.co/tL3HvwsKcq.gif" width=200><br>
+
 ## Required
 - [x] User can browse through multiple flashcards
 - [x] User can re-open the app and see previously created flashcards
