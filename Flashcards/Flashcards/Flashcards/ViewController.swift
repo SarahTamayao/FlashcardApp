@@ -53,22 +53,23 @@ class ViewController: UIViewController {
        //Increase current index
         currentIndex = currentIndex + 1
         
-        //Update labels
-        updateLabels()
-        
         //Update buttons
         updateNextPrevButtons()
+        
+        // Animate card out
+        animateCardOut()
     }
     
     @IBAction func didTapOnPrev(_ sender: Any) {
         //Decrease current index
         currentIndex = currentIndex - 1
         
-        //Update labels
-        updateLabels()
-        
         //Update buttons
         updateNextPrevButtons()
+        
+        // Animate card out
+        animateCardBackOut()
+        
     }
     
     @IBOutlet weak var nextButton: UIButton!
@@ -112,13 +113,26 @@ class ViewController: UIViewController {
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
         //frontLabel.isHidden = true
+        //flipFlashcard()
+        
         if frontLabel.isHidden == true {
-            frontLabel.isHidden = false
+            flipFlashcardBack()
+        } else {
+            flipFlashcard()
         }
-        else{
-            frontLabel.isHidden = true
-        }
-               
+    }
+    
+    func flipFlashcard() {
+        
+        UIView.transition(with: theflashcard, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            self.frontLabel.isHidden = true
+        })
+    }
+    
+    func flipFlashcardBack () {
+        UIView.transition(with: theflashcard, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            self.frontLabel.isHidden = false
+        })
     }
     
     func userHasNoCards() {
@@ -140,14 +154,75 @@ class ViewController: UIViewController {
         nextButton.isHidden = false
     }
     
+    func animateCardOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.theflashcard.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        }, completion: { finished in
+            
+            //Update labels
+            self.updateLabels()
+            
+            //Run other animation
+            self.animateCardIn()
+        })
+    }
+    
+    func animateCardIn() {
+        
+        //Start on the right side (don't animate this)
+        theflashcard.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
+        // Animate card going to its original position
+        UIView.animate(withDuration: 0.3) {
+            self.theflashcard.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateCardBackIn() {
+        
+        //Start on the left side (don't animate this)
+        theflashcard.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        
+        // Animate card going to its original position
+        UIView.animate(withDuration: 0.3) {
+            self.theflashcard.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateCardBackOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.theflashcard.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        }, completion: { finished in
+            
+            //Update labels
+            self.updateLabels()
+            
+            //Run other animation
+            self.animateCardBackIn()
+        })
+    }
+
     @IBAction func didTapOnbtnOne(_ sender: Any) {
-        btnOptionOne.isHidden = true
+        if frontLabel.isHidden == true {
+            flipFlashcardBack()
+        } else{
+            flipFlashcardBack()
+        }
     }
     @IBAction func didTapOnbtnTwo(_ sender: Any) {
-        frontLabel.isHidden = true
+        if frontLabel.isHidden == true {
+            flipFlashcardBack()
+        } else{
+            flipFlashcard()
+        }
+            
     }
     @IBAction func didTapOnbtwThree(_ sender: Any) {
-        btnOptionThree.isHidden = true
+        if frontLabel.isHidden == true {
+            flipFlashcardBack()
+        } else{
+            flipFlashcardBack()
+        }
     }
     
     
@@ -173,8 +248,6 @@ class ViewController: UIViewController {
             //Update buttons
             updateNextPrevButtons()
             
-            //Update labels
-            updateLabels()
             
             //Save all flashcards
             saveAllFlashcardsToDisk()
