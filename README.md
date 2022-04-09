@@ -2,6 +2,29 @@
 # FlashcardApp
 Flash-card App
 
+
+## Lab 4
+
+### App Description
+This is an update of the Flashcard app. The app has a splash screen and an app icon. The flashcards have also been animated to flip when selected correctly and slide off the screen when the previous and next buttons are tapped.
+
+### App Walk-though
+
+<img src="http://g.recordit.co/MGzWBQ020g.gif" width=200><br>
+
+## Required
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
+- [x] Push code to GitHub
+## Optional
+- [ ] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [ ] Correct answer in multiple choice should be random
+
+
 ## Lab 3
 
 ### App Description
