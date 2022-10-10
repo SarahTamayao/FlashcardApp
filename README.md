@@ -19,9 +19,6 @@ This is an update of the Flashcard app. The user can now add their own questions
 
 <img src="http://g.recordit.co/VyO6GyMLDg.gif" width=200><br>
 
-### Editing existing flashcard
-
-<img src="http://g.recordit.co/WkLuTiUBMI.gif" width=200><br>
 
 ### Re-opening the app and see previously created flashcards
 
